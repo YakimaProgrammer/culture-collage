@@ -1,4 +1,4 @@
-import { CollageRow } from "../collageRow";
+import { CollageRow } from "../CollageRow";
 import style from "./index.module.css";
 
 import rock from "../resources/rock.jpg";
