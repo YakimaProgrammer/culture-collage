@@ -27,17 +27,20 @@ const collage = [
 
 export function App() {
   return (
-    <table className={style.collageTable}>
-      <tbody>
-        {collage.map((e,i) => 
-          <CollageRow
-            text={e[0]}
-            img={e[1]}
-            index={i}
-            key={i}
-          />
-        )}
-      </tbody>
-    </table>
+    <div>
+      <h1 className={style.collageTitle}>Magnus Fulton</h1>
+      <table className={style.collageTable}>
+        <tbody>
+          {collage.map((e,i) => 
+            <CollageRow
+              text={e[0]}
+              img={e[1]}
+              index={i}
+              key={i}
+            />
+          )}
+        </tbody>
+      </table>
+    </div>
   )
 }
