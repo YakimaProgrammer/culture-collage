@@ -1,16 +1,16 @@
 import { CollageRow } from "../CollageRow";
 import style from "./index.module.css";
 
-import rock from "../resources/rock.jpg";
-import leia from "../resources/leia.jpg";
-import ubuntuMoment from "../resources/hackerMan1.png";
-import moon from "../resources/moon2.jpg";
-import hailMary from "../resources/hailMary.jpg";
-import volleyball from "../resources/volleyball.jpg";
-import printer from "../resources/3dPrinter.jpg";
-import omam from "../resources/songs2.png";
-import hoplite from "../resources/hoplite.jpg";
-import crazed from "../resources/crazed.jpg";
+import rock from "../resources/rock.webp";
+import leia from "../resources/leia.webp";
+import ubuntuMoment from "../resources/hackerMan1.webp";
+import moon from "../resources/moon2.webp";
+import hailMary from "../resources/hailMary.webp";
+import volleyball from "../resources/volleyball.webp";
+import printer from "../resources/3dPrinter.webp";
+import omam from "../resources/songs2.webp";
+import hoplite from "../resources/hoplite.webp";
+import crazed from "../resources/crazed.webp";
 
 const collage = [
   ["Who am I\nExplain I try\nUse verse to converse", rock],
