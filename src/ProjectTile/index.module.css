@@ -1,0 +1,37 @@
+.tileContainer {
+  padding: 10px;
+}
+
+.tile {
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  box-shadow: 0px 0px 5px 1px gray;
+  transition: 0.25s ease width,
+              0.25s ease height;
+}
+
+.tile:hover {
+  width: 210px;
+  height: 210px;
+}
+
+.coverImg {
+  width: auto;
+  height: 80%;
+  margin: auto;
+  display: block;
+  border-radius: 5%;
+}
+
+.description {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  height: 20px;
+  transition: 0.25s ease font-size;
+}
+
+.tile:hover .description {
+  font-size: 20px;
+}

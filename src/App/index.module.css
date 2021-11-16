@@ -1,8 +1,14 @@
-.collageTable {
-  width: 100%;
-  table-layout: fixed;
+.title {
+  text-align: center;
 }
 
-.collageTitle {
-  text-align: center;
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.overrideLinkStyle a {
+  text-decoration: none;
+  color: inherit;
 }
