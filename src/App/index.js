@@ -7,12 +7,13 @@ import {
   Routes
 } from "react-router-dom";
 import style from "./index.module.css";
+import sharedStyle from "../shared.module.css";
 import crazed from "../CultureCollage/resources/crazed.jpg";
 
 function ProjectList() {
   return (
     <div>
-      <h1 className={style.title}>Photography 101</h1>
+      <h1 className={sharedStyle.title}>Photography 101</h1>
       <div className={style.projectContainer}>
         <Link to="culture-collage">          
           <ProjectTile 
@@ -27,7 +28,7 @@ function ProjectList() {
 
 function Error404() {
   return (
-    <h1 className={style.title}>Error 404: Not found</h1>
+    <h1 className={sharedStyle.title}>Error 404: Not found</h1>
   )
 }
 
