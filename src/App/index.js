@@ -1,5 +1,6 @@
 import { ProjectTile } from "../ProjectTile";
 import { CultureCollage } from "../CultureCollage";
+import { Linear } from "../Linear";
 import {
   BrowserRouter,
   Route,
@@ -9,6 +10,7 @@ import {
 import style from "./index.module.css";
 import sharedStyle from "../shared.module.css";
 import crazed from "../CultureCollage/resources/crazed.jpg";
+import lockers from "../Linear/resources/lockers.jpg";
 
 function ProjectList() {
   return (
@@ -19,6 +21,13 @@ function ProjectList() {
           <ProjectTile 
             img={crazed}
             description="Culture Collage" 
+          />
+        </Link>
+
+        <Link to="linear">          
+          <ProjectTile 
+            img={lockers}
+            description="Linear" 
           />
         </Link>
       </div>
@@ -38,6 +47,7 @@ export function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/culture-collage" element={<CultureCollage />} />
+          <Route path="/Linear" element={<Linear />} />
           <Route path="" element={<ProjectList />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
