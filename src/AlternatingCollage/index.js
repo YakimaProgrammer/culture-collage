@@ -5,7 +5,7 @@ export function AlternatingCollage(props) {
   return (
     <table className={style.collageTable}>
       <tbody>
-        {props.children.map((c, i) => cloneElement(c, {index: i}))}
+        {props.children.map((c, i) => cloneElement(c, {index: i, key: i}))}
       </tbody>
     </table>
   );
