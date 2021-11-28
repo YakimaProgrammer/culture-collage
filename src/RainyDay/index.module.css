@@ -1,0 +1,4 @@
+.rainDrop {
+  position: absolute;
+  transition: top ease 2s, opacity ease 2s;
+}
