@@ -1,15 +1,16 @@
 import { AlternatingCollage, CollageRow } from "../AlternatingCollage";
 import sharedStyle from "../shared.module.css";
-import rock from "./resources/rock.jpg";
-import leia from "./resources/leia.jpg";
-import ubuntuMoment from "./resources/hackerMan1.png";
-import moon from "./resources/moon2.jpg";
-import hailMary from "./resources/hailMary.jpg";
-import volleyball from "./resources/volleyball.jpg";
-import printer from "./resources/3dPrinter.jpg";
-import omam from "./resources/songs2.png";
-import hoplite from "./resources/hoplite.jpg";
-import crazed from "./resources/crazed.jpg";
+
+import rock from "./resources/webp/rock.webp";
+import leia from "./resources/webp/leia.webp";
+import ubuntuMoment from "./resources/webp/hackerMan1.webp";
+import moon from "./resources/webp/moon2.webp";
+import hailMary from "./resources/webp/hailMary.webp";
+import volleyball from "./resources/webp/volleyball.webp";
+import printer from "./resources/webp/3dPrinter.webp";
+import omam from "./resources/webp/songs2.webp";
+import hoplite from "./resources/webp/hoplite.webp";
+import crazed from "./resources/webp/crazed.webp";
 
 export function CultureCollage() {
   return (
