@@ -1,0 +1,23 @@
+.collageTable {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.collageRow {
+  width: 50%;
+}
+
+.rowImg {
+  width: auto;
+  max-height: 50vh;
+  max-width: 50vw;
+  display: block;
+  margin: auto;
+
+}
+
+.rowText {
+  font-size: 3vw;
+  padding: 5%;
+  text-align: center;
+}
