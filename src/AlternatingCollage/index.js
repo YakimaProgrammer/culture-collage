@@ -42,13 +42,3 @@ export function CollageRow(props) {
     );
   }
 }
-
-/*
-export function buildAlternatingCollage(rows) {
-  return (
-    <AlternatingCollage>
-      {rows.map((row, index) => <CollageRow text={row[0]} img={row[1]} index={index} />)}
-    </AlternatingCollage>
-  )
-}
-*/

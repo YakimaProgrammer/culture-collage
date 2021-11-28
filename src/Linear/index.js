@@ -1,4 +1,4 @@
-import { Carousel } from "../Carousel";
+import style from "./index.module.css";
 import sharedStyle from "../shared.module.css";
 import hallway1 from "./resources/hallway1.jpg";
 import hallway2 from "./resources/hallway2.jpg";
@@ -11,14 +11,14 @@ export function Linear() {
   return (
     <div>
       <h1 className={sharedStyle.title}>Linear</h1>
-      <Carousel>
+      <div className={style.linearContainer}>
         <img src={hallway1} alt="" />
         <img src={hallway2} alt="" />
         <img src={hallway3} alt="" />
         <img src={keyboard} alt="" />
         <img src={lockers} alt="" />
         <img src={wall} alt="" />
-      </Carousel>
+      </div>
     </div>
   )
 }
