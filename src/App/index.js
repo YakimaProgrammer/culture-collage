@@ -38,7 +38,8 @@ function ProjectList() {
         <Link to="animal-photography">          
           <ProjectTile 
             img={pondering}
-            description="Animal Photography" 
+            //I had to include a font-size override so that the text doesn't try to wrap
+            description={<span className={style.tiny}>Animal Photography</span>} 
           />
         </Link>
       </div>
