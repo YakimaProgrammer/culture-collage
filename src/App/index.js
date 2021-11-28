@@ -1,6 +1,7 @@
 import { ProjectTile } from "../ProjectTile";
 import { CultureCollage } from "../CultureCollage";
 import { Linear } from "../Linear";
+import { AnimalPhotography } from "../AnimalPhotography";
 import { BackButton } from "../BackButton";
 import {
   BrowserRouter,
@@ -10,8 +11,10 @@ import {
 } from "react-router-dom";
 import style from "./index.module.css";
 import sharedStyle from "../shared.module.css";
+
 import crazed from "../CultureCollage/resources/crazed.jpg";
 import lockers from "../Linear/resources/lockers.jpg";
+import pondering from "../AnimalPhotography/resources/pondering.jpg";
 
 function ProjectList() {
   return (
@@ -29,6 +32,14 @@ function ProjectList() {
           <ProjectTile 
             img={lockers}
             description="Linear" 
+          />
+        </Link>
+
+        <Link to="animal-photography">          
+          <ProjectTile 
+            img={pondering}
+            //I had to include a font-size override so that the text doesn't try to wrap
+            description={<span className={style.tiny}>Animal Photography</span>} 
           />
         </Link>
       </div>
@@ -49,7 +60,8 @@ export function App() {
         <BackButton />
         <Routes>
           <Route path="/culture-collage" element={<CultureCollage />} />
-          <Route path="/Linear" element={<Linear />} />
+          <Route path="/linear" element={<Linear />} />
+          <Route path="/animal-photography" element={<AnimalPhotography />} />
           <Route path="" element={<ProjectList />} />
           <Route path="*" element={<Error404 />} />
         </Routes>

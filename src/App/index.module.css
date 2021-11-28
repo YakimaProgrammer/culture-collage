@@ -8,3 +8,7 @@
   text-decoration: none;
   color: inherit;
 }
+
+.tiny {
+  font-size: 15px;
+}
