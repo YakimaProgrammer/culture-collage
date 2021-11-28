@@ -1,0 +1,18 @@
+.backButton {
+  width: 15%;
+  height: 32px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  opacity: 5%;
+  transition: opacity ease 0.75s;
+}
+
+.backButton:hover {
+  opacity: 100%;
+}
+
+.backButton img {
+  height: 32px;
+  width: auto;
+}

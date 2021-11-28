@@ -1,6 +1,7 @@
 import { ProjectTile } from "../ProjectTile";
 import { CultureCollage } from "../CultureCollage";
 import { Linear } from "../Linear";
+import { BackButton } from "../BackButton";
 import {
   BrowserRouter,
   Route,
@@ -45,6 +46,7 @@ export function App() {
   return (
     <div className={style.overrideLinkStyle}>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BackButton />
         <Routes>
           <Route path="/culture-collage" element={<CultureCollage />} />
           <Route path="/Linear" element={<Linear />} />
