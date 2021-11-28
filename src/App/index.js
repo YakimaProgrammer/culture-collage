@@ -12,9 +12,9 @@ import {
 import style from "./index.module.css";
 import sharedStyle from "../shared.module.css";
 
-import crazed from "../CultureCollage/resources/crazed.jpg";
-import lockers from "../Linear/resources/lockers.jpg";
-import pondering from "../AnimalPhotography/resources/pondering.jpg";
+import crazed from "../CultureCollage/resources/webp/crazed.webp";
+import lockers from "../Linear/resources/webp/lockers.webp";
+import pondering from "../AnimalPhotography/resources/webp/pondering.webp";
 
 function ProjectList() {
   return (

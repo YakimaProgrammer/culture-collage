@@ -1,11 +1,12 @@
 import style from "./index.module.css";
 import sharedStyle from "../shared.module.css";
-import hallway1 from "./resources/hallway1.jpg";
-import hallway2 from "./resources/hallway2.jpg";
-import hallway3 from "./resources/hallway3.jpg";
-import keyboard from "./resources/keyboard.jpg";
-import lockers from "./resources/lockers.jpg";
-import wall from "./resources/wall.jpg";
+
+import hallway1 from "./resources/webp/hallway1.webp";
+import hallway2 from "./resources/webp/hallway2.webp";
+import hallway3 from "./resources/webp/hallway3.webp";
+import keyboard from "./resources/webp/keyboard.webp";
+import lockers from "./resources/webp/lockers.webp";
+import wall from "./resources/webp/wall.webp";
 
 export function Linear() {
   return (
