@@ -23,17 +23,24 @@ function ProjectList() {
     <div>
       <h1 className={sharedStyle.title}>Photography 101</h1>
       <div className={style.projectContainer}>
-        <Link to="culture-collage">
-          <ProjectTile 
-            img={crazed}
-            description="Culture Collage" 
-          />
-        </Link>
-
         <Link to="linear">
           <ProjectTile 
             img={lockers}
             description="Linear" 
+          />
+        </Link>
+
+        <Link to="rainy-day">
+          <ProjectTile
+            img={rainbow}
+            description="Rainy Day"
+          />
+        </Link>
+
+        <Link to="culture-collage">
+          <ProjectTile 
+            img={crazed}
+            description="Culture Collage" 
           />
         </Link>
 
@@ -42,13 +49,6 @@ function ProjectList() {
             img={pondering}
             //I had to include a font-size override so that the text doesn't try to wrap
             description={<span className={style.tiny}>Animal Photography</span>} 
-          />
-        </Link>
-
-        <Link to="rainy-day">
-          <ProjectTile
-            img={rainbow}
-            description="Rainy Day"
           />
         </Link>
       </div>
