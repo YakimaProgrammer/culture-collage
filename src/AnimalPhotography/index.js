@@ -27,7 +27,7 @@ import toy from "./resources/webp/toy.webp";
 import blackandwhite from "./resources/originals/blackandwhite.png"; //This is a black and white png. Any conversion to .webp is not worth the artifacts
 import staring_out_the_window from "./resources/webp/window.webp";
 
-const images = [rosco_shake1, staring_out_the_window, sleep5, porter2, sleep3, staring_off_into_the_distance, glowing_eyes, blackandwhite, sleep4, furgus, rosco, leia, rope, chipmunk, intense_stare, sleep1, rosco_shake2, mud, staring_into_the_fog, pondering, toy, bird, porter, rosco_stare];
+const images = [rosco_shake1, pondering, sleep5, porter2, sleep3, staring_off_into_the_distance, glowing_eyes, blackandwhite, sleep4, furgus, rosco, leia, rope, chipmunk, intense_stare, sleep1, rosco_shake2, mud, staring_into_the_fog, staring_out_the_window, toy, bird, porter, rosco_stare];
 
 export function AnimalPhotography() {
   return (
