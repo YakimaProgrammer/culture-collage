@@ -1,0 +1,18 @@
+.snowflake > img {
+  mask-image: url("./resources/svg/snow2.svg");
+  mask-size: 100% 100%;
+  animation: spin 10s linear infinite;
+  transition: mask-size .5s ease;
+}
+
+.snowflake > img:hover {
+  animation: none;
+  mask-image: none;
+}
+
+@keyframes spin { 
+  100% { 
+      transform: rotate(360deg); 
+  } 
+}
+

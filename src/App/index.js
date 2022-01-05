@@ -3,6 +3,7 @@ import { CultureCollage } from "../CultureCollage";
 import { Linear } from "../Linear";
 import { AnimalPhotography } from "../AnimalPhotography";
 import { RainyDay } from "../RainyDay";
+import { LetItSnow } from "../LetItSnow";
 import { BackButton } from "../BackButton";
 import {
   BrowserRouter,
@@ -17,6 +18,7 @@ import crazed from "../CultureCollage/resources/webp/crazed.webp";
 import lockers from "../Linear/resources/webp/lockers.webp";
 import pondering from "../AnimalPhotography/resources/webp/pondering.webp";
 import rainbow from "../RainyDay/resources/webp/rainbow.webp";
+import snowyRoad from "../LetItSnow/resources/webp/snowy_road.webp";
 
 function ProjectList() {
   return (
@@ -51,6 +53,13 @@ function ProjectList() {
             description={<span className={style.tiny}>Animal Photography</span>} 
           />
         </Link>
+
+        <Link to="let-it-snow">
+          <ProjectTile 
+            img={snowyRoad}
+            description="Let It Snow!" 
+          />
+        </Link>
       </div>
     </div>
   )
@@ -72,6 +81,7 @@ export function App() {
           <Route path="/linear" element={<Linear />} />
           <Route path="/animal-photography" element={<AnimalPhotography />} />
           <Route path="/rainy-day" element={<RainyDay />} />
+          <Route path="/let-it-snow" element={<LetItSnow />} />
           <Route path="" element={<ProjectList />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
