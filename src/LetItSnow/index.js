@@ -17,7 +17,7 @@ import waterslide from "./resources/webp/Waterslide.webp";
 
 function Snowflake(props) {
   return (
-    <div className={style.snowflake}>
+    <div className={style.snowflake} style={{"--backgroundImg": `url(${props.src})`}}>
       <img src={props.src} className={collageStyle.rowImg} alt="" />
     </div>
   )
@@ -25,7 +25,7 @@ function Snowflake(props) {
 
 export function LetItSnow() {
   return (
-    <div>
+    <div className={style.overflowHandler}>
       <h1 className={sharedStyle.title}>Let it snow!</h1>
 
       <AlternatingCollage>

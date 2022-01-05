@@ -1,13 +1,16 @@
-.snowflake > img {
+.snowflake {
+  background-image: var(--backgroundImg);
   mask-image: url("./resources/svg/snow2.svg");
   mask-size: 100% 100%;
   animation: spin 10s linear infinite;
-  transition: mask-size .5s ease;
 }
 
-.snowflake > img:hover {
-  animation: none;
-  mask-image: none;
+.snowflake:hover {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 
 @keyframes spin { 
@@ -16,3 +19,19 @@
   } 
 }
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    mask-image: none;
+    animation: none;
+    background-image: none;
+  }
+}
