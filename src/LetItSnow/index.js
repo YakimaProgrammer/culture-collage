@@ -21,16 +21,24 @@ class Snowflake extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {isHovered: false, invisible: false};
+    this.state = {isHovered: false, invisible: false, timeout: -1};
 
     this.mouseIn = () => {
-      this.setState({invisible: true});
-      setTimeout(() => this.setState({isHovered: true, invisible: false}), 500);
+      this.setState({
+        invisible: true, 
+        lock: true, 
+        timeout: setTimeout(() => this.setState({isHovered: true, invisible: false, timeout: -1}), 500)
+      });
     }
 
     this.mouseOut = () => {
-      this.setState({invisible: true});
-      setTimeout(() => this.setState({isHovered: false, invisible: false}), 500);
+      if (this.state.timeout !== -1) {
+        clearTimeout(this.state.timeout);
+        this.setState({isHovered: false, invisible: false, timeout: -1});
+      } else {
+        this.setState({invisible: true});
+        setTimeout(() => this.setState({isHovered: false, invisible: false}), 500);
+      }
     }
   }
 
