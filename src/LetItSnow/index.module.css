@@ -1,37 +1,13 @@
+.opacityTransition {
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
 .snowflake {
-  background-image: var(--backgroundImg);
   mask-image: url("./resources/svg/snow2.svg");
   mask-size: 100% 100%;
-  animation: spin 10s linear infinite;
 }
 
-.snowflake:hover {
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-}
-
-@keyframes spin { 
-  100% { 
-      transform: rotate(360deg); 
-  } 
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-    mask-image: none;
-    animation: none;
-    background-image: none;
-  }
+.invisible {
+  opacity: 0;
 }

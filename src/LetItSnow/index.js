@@ -1,3 +1,4 @@
+import { Component } from "react";
 import { AlternatingCollage, CollageRow } from "../AlternatingCollage";
 import style from "./index.module.css";
 import sharedStyle from "../shared.module.css";
@@ -15,12 +16,39 @@ import snowyRoad from "./resources/webp/snowy_road.webp";
 import snowCar from "./resources/webp/TheySaidItWasForWinterDriving.webp";
 import waterslide from "./resources/webp/Waterslide.webp";
 
-function Snowflake(props) {
-  return (
-    <div className={style.snowflake} style={{"--backgroundImg": `url(${props.src})`}}>
-      <img src={props.src} className={collageStyle.rowImg} alt="" />
-    </div>
-  )
+
+class Snowflake extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {isHovered: false, invisible: false};
+
+    this.mouseIn = () => {
+      this.setState({invisible: true});
+      setTimeout(() => this.setState({isHovered: true, invisible: false}), 500);
+    }
+
+    this.mouseOut = () => {
+      this.setState({invisible: true});
+      setTimeout(() => this.setState({isHovered: false, invisible: false}), 500);
+    }
+  }
+
+  render() {
+    return (
+      <img 
+        src={this.props.src} 
+        className={
+          collageStyle.rowImg + " " + style.opacityTransition + " " + 
+          (this.state.isHovered ? "" : style.snowflake) + " " +
+          (this.state.invisible ? style.invisible : "")
+        } 
+        onMouseEnter={this.mouseIn}
+        onMouseLeave={this.mouseOut}
+        alt="" 
+      />
+    )
+  }
 }
 
 export function LetItSnow() {
