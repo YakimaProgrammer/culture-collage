@@ -22,7 +22,12 @@ export function CollageRow(props) {
 
   const img = (
     <td className={style.collageRow}>
-      <img src={props.img} className={style.rowImg} alt="" />
+      {
+        !!props.img ?
+          <img src={props.img} className={style.rowImg} alt="" />
+        :
+          props.children
+      }
     </td>
   );
   

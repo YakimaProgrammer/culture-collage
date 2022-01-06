@@ -1,0 +1,13 @@
+.opacityTransition {
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+.snowflake {
+  mask-image: url("./resources/svg/snow2.svg");
+  mask-size: 100% 100%;
+}
+
+.invisible {
+  opacity: 0;
+}
