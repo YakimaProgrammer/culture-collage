@@ -15,7 +15,10 @@ import smile from "./resources/webp/Smile.webp";
 import snowyRoad from "./resources/webp/snowy_road.webp";
 import snowCar from "./resources/webp/TheySaidItWasForWinterDriving.webp";
 import waterslide from "./resources/webp/Waterslide.webp";
-
+import another8Inches from "./resources/webp/Another8Inches.webp";
+import lookOutBelow from "./resources/webp/LookOutBelow.webp";
+import snowyBranches from "./resources/webp/SnowyBranches.webp";
+import winterCityscape from "./resources/webp/WinterCityscape.webp";
 
 class Snowflake extends Component {
   constructor(props) {
@@ -98,6 +101,22 @@ export function LetItSnow() {
         </CollageRow>
 
         <CollageRow>
+          <Snowflake src={another8Inches} />
+        </CollageRow>
+
+        <CollageRow>
+          <Snowflake src={lookOutBelow} />
+        </CollageRow>
+
+        <CollageRow>
+          <Snowflake src={snowyBranches} />
+        </CollageRow>
+
+        <CollageRow>
+          <Snowflake src={winterCityscape} />
+        </CollageRow>
+{/*
+        <CollageRow>
           <Snowflake src={buriedInTheSnow} />
         </CollageRow>
 
@@ -108,6 +127,7 @@ export function LetItSnow() {
         <CollageRow>
           <Snowflake src={smile} />
         </CollageRow>
+*/}
       </AlternatingCollage>
     </div>
   )
