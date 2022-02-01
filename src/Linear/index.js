@@ -7,6 +7,8 @@ import hallway3 from "./resources/webp/hallway3.webp";
 import keyboard from "./resources/webp/keyboard.webp";
 import lockers from "./resources/webp/lockers.webp";
 import wall from "./resources/webp/wall.webp";
+import wall2 from "./resources/webp/wall2.webp";
+import track from "./resources/webp/track.webp";
 
 export function Linear() {
   return (
@@ -19,6 +21,8 @@ export function Linear() {
         <img src={keyboard} alt="" />
         <img src={lockers} alt="" />
         <img src={wall} alt="" />
+        <img src={wall2} alt="" />
+        <img src={track} alt="" />
       </div>
     </div>
   )
